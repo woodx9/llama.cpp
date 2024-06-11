@@ -2182,9 +2182,9 @@ struct llama_vocab {
     int special_add_eos = -1; // -1 unknown, 1 add, 0 don't add.
 
     id linefeed_id       = 13;
-    id special_prefix_id = -1;
-    id special_suffix_id = -1;
-    id special_middle_id = -1;
+    id special_prefix_id = 32016;
+    id special_suffix_id = 32015;
+    id special_middle_id = 32017;
     id special_eot_id    = -1; // TODO: move above after "eos_id", and here add "file separator" token
 
     bool add_space_prefix = true;
